@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import ExpenseDate from './ExpenseDate.js';
 import Card from '../UI/Card.js'
 const ExpenseItem = (props) => {
-    const [title , setTitle] = useState(props.title);
+    const [title , setTitle] = useState(props.title); // Array destructuring
      
     const clickHandler = () => {
         setTitle('Updated!!')
