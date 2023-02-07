@@ -13,7 +13,7 @@ const NewExpense = (props) => {
     }
     return (
         <div className="new-expense">
-            <ExpenseForm onSaveExpenseData={SaveExpenseDataHandler} />
+            <ExpenseForm onCancelButton = {props.onCancelButton} onSaveExpenseData={SaveExpenseDataHandler} />
         </div>
     )
 };

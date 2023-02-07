@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ExpenseItemList from "./Components/EXPENSES/ExpenseItemList";
-import NewExpense from "./Components/NewExpense/NewExpense";
+import ExpenseFormToggle from "./Components/NewExpense/ExpenseFormToggle"
 const INITIAL_EXPENSES = [
   {
     id: 'e1',
@@ -35,9 +35,10 @@ const App = () => {
         ]);
     });
   };
+  
   return (
     <div>
-      <NewExpense onAddExpense={addExpenseHandler} />
+      <ExpenseFormToggle onAddExpense = {addExpenseHandler}/>
       <ExpenseItemList expenses={expenses} />
     </div>
   );
