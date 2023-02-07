@@ -12,7 +12,7 @@ const ExpenseFormToggle = (props) => {
     if (visibility === true) { return <NewExpense onCancelButton={onCancelButton} onAddExpense={onAddExpenseHandler} /> }
     else {
         return <div className="new-expense">
-            <div className="new-expense__controls" >
+            <div className="new-expense__controls" style={{justifyContent:"center"}}>
                 <div className="new-expense__actions">
                     <button className="" onClick={newExpenseHandler}>Add New Expense</button>
                 </div>
